@@ -1,0 +1,43 @@
+{
+  "name": "sugar-and-aura",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev --webpack --hostname 127.0.0.1 --port 3055",
+    "build": "next build --webpack",
+    "start": "next start --hostname 127.0.0.1 --port 3055",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "verify:export": "node scripts/verify-export.mjs",
+    "build:site": "SUGAR_STATIC_EXPORT=1 next build --webpack",
+    "preview:site": "serve out -l tcp://127.0.0.1:3055 --no-clipboard",
+    "test": "node --experimental-strip-types --test tests/*.test.mjs",
+    "package:source": "python3 scripts/package-source.py"
+  },
+  "dependencies": {
+    "@fontsource/allura": "^5.3.0",
+    "@fontsource/cormorant-garamond": "^5.3.0",
+    "@fontsource/dm-sans": "^5.3.0",
+    "lucide-react": "^1.73.0",
+    "motion": "^14.14.0",
+    "next": "^16.4.6",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "sharp": "^0.35.5"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.3.5",
+    "@types/node": "^26.6.6",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "eslint": "^9.39.5",
+    "eslint-config-next": "^16.4.6",
+    "tailwindcss": "^4.3.5",
+    "typescript": "^6.0.3",
+    "serve": "^14.2.8"
+  },
+  "engines": {
+    "node": "24.x"
+  }
+}

@@ -1,0 +1,14 @@
+import type {Metadata} from 'next';
+import {ArrowDown,Mail,MapPin} from 'lucide-react';
+import {ContactForm,Accordion,Reveal} from '@/components/experience';
+import {Picture,TextLink} from '@/components/shared';
+import {business} from '@/lib/config/business';
+import {generalFAQs} from '@/lib/content/services';
+import {ButterflySignature} from '@/components/phase-two/editorial';
+export const metadata:Metadata={title:'Contact Us',description:'A little conversation is a beautiful beginning. Explore Sugar & Aura enquiry options and the clearly labelled local preview contact form.',alternates:{canonical:'/contact'}};
+export default function ContactPage(){return <div className="phase-two conversation-page">
+  <section className="conversation-hero container"><div><p className="eyebrow">A NOTE, A QUESTION, A BEAUTIFUL BEGINNING</p><h1>Let’s make<br/><em>a little time.</em></h1><p>A ritual you’re curious about. A look you love.<br/>Or simply a little care you’ve been meaning to make room for.</p><a href="#enquiry" className="text-link">Begin your note<ArrowDown size={17}/></a></div><Picture src="/images/beauty-arrival.webp" alt="A linen beauty bag with fresh towels and carefully arranged care essentials" priority/><span className="conversation-script script">Your beauty.<br/>Our priority.</span></section>
+  <section id="enquiry" className="conversation-layout container section-pad"><Reveal><ContactForm/></Reveal><aside className="conversation-details"><p className="eyebrow">A LITTLE CLARITY BEFORE YOU WRITE</p><div><Mail size={23} strokeWidth={1.2}/><h3>Enquiries, thoughtfully prepared.</h3><p>Arrange your beauty moment through our official WhatsApp. The form is a local preview: it validates your note but does not send or save it.</p></div>{business.email&&<div><h4>Email</h4><a href={`mailto:${business.email}`}>{business.email}</a></div>}{business.phone&&<div><h4>Call us</h4><a href={`tel:${business.phone}`}>{business.phone}</a></div>}{business.whatsapp&&<div><h4>WhatsApp</h4><a href={business.whatsapp} target="_blank" rel="noopener noreferrer">Start a conversation</a></div>}{business.hours&&<div><h4>Enquiry hours</h4><p>{business.hours}</p></div>}<div><MapPin size={23} strokeWidth={1.2}/><h3>A personal visit, at your place.</h3><p>Enquire from any of the seven emirates. Your location, chosen ritual and availability are discussed before a visit is agreed.</p><TextLink href="/areas">Explore service areas</TextLink></div><ButterflySignature/></aside></section>
+  <section className="contact-reassurance"><div className="container"><div><p className="eyebrow">A LITTLE REASSURANCE</p><h2>Before your<br/><em>beautiful beginning.</em></h2></div><Accordion items={[generalFAQs[1],generalFAQs[3],generalFAQs[5]]}/></div></section>
+  <div className="contact-signoff container"><span className="script">More beautiful days at home.</span><TextLink href="/services">Explore the beauty collection</TextLink></div>
+</div>}

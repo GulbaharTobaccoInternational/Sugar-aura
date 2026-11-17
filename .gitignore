@@ -1,0 +1,37 @@
+# Dependencies and generated builds
+node_modules/
+.next/
+out/
+dist/
+build/
+coverage/
+.turbo/
+.vercel/
+*.tsbuildinfo
+__pycache__/
+*.py[cod]
+
+# Local environment files and credentials
+.env*
+!.env.example
+*.pem
+*.key
+
+# Private local preview and agent metadata
+.openai/
+.codex/
+.agents/
+
+# Logs, operating-system files and test output
+*.log
+.DS_Store
+playwright-report/
+test-results/
+
+# Generated local reports and delivery archives
+docs/qa*.md
+docs/desktop-preview.jpg
+docs/phase-two-design.md
+*.zip
+*.tar.gz
+*.tgz
