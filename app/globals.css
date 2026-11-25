@@ -27,6 +27,7 @@ p { color: var(--muted); }
 
 .container {
   width: min(100%, 1600px);
+  max-width: 1600px;
   padding-inline: var(--gutter);
   margin-inline: auto;
 }
