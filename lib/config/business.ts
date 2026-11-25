@@ -1,23 +1,6 @@
-import { createWhatsAppUrl } from '@/lib/booking';
-
 export const business = {
   name: 'Sugar & Aura',
-  descriptor: 'Traditional Sudanese Sweet',
-  siteUrl: process.env.NEXT_PUBLIC_SITE_URL || (process.env.VERCEL_PROJECT_PRODUCTION_URL ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}` : 'https://sugar-and-aura-beauty.vinu-gulbahartobacco.chatgpt.site'),
-  email: '',
-  phone: '',
-  whatsapp: createWhatsAppUrl(),
-  hours: '',
-  social: [] as { label: string; url: string }[],
-  booking: { mode: 'whatsapp' as const },
-  contact: { mode: 'local-demo' as const },
+  descriptor: 'Traditional Sudanese Halwa',
+  siteUrl: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://sugaraura.vercel.app').origin,
+  whatsapp: 'https://wa.me/971588807612',
 };
-
-export const navigation = [
-  { label: 'Home', href: '/' },
-  { label: 'Our Services', href: '/services' },
-  { label: 'Why Us', href: '/why-us' },
-  { label: 'About', href: '/about' },
-  { label: 'Areas', href: '/areas' },
-  { label: 'Contact', href: '/contact' },
-];

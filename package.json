@@ -9,10 +9,6 @@
     "start": "next start --hostname 127.0.0.1 --port 3055",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
-    "verify:export": "node scripts/verify-export.mjs",
-    "build:site": "SUGAR_STATIC_EXPORT=1 next build --webpack",
-    "preview:site": "serve out -l tcp://127.0.0.1:3055 --no-clipboard",
-    "test": "node --experimental-strip-types --test tests/*.test.mjs",
     "package:source": "python3 scripts/package-source.py"
   },
   "dependencies": {
@@ -34,8 +30,7 @@
     "eslint": "^9.39.5",
     "eslint-config-next": "^16.4.6",
     "tailwindcss": "^4.3.5",
-    "typescript": "^6.0.3",
-    "serve": "^14.2.8"
+    "typescript": "^6.0.3"
   },
   "engines": {
     "node": "24.x"

@@ -5,11 +5,6 @@
     "generationId": "exec-e116fbc6-f5d9-4d2d-9e4a-233c59ca0868.png"
   },
   {
-    "name": "sugaring",
-    "prompt": "Use case: photorealistic-natural. Asset: premium beauty brand editorial macro photograph, landscape 3:2. Rich translucent amber sugar paste curling gently on a wooden spatula above a small artisanal ceramic bowl on warm ivory stone, a cut lemon, subtle white frangipani flowers, folded linen spa towel, tiny gold spoon. A quiet home beauty ritual still life. Soft warm side light, creamy shallow depth of field, authentic material textures, premium magazine photography, palette honey amber warm beige cream, no text or logos, no people.",
-    "generationId": "exec-0a210706-bea6-4b24-b93d-3da080f2fd7b.png"
-  },
-  {
     "name": "hair",
     "prompt": "Use case: photorealistic-natural. Asset: premium hair styling editorial portrait, vertical 4:5. Beautiful adult woman seen from behind with long dark chocolate glossy hair styled in soft elegant sculptural waves, wearing a cream satin blouse, in a warmly sunlit luxurious home. Hair is the focus, luminous natural highlights, hand gently touching a curl, soft warm ivory wall and linen curtains in background, refined magazine beauty campaign photography, realistic textures, rich brown ivory champagne palette, no text logos or watermark.",
     "generationId": "exec-ee99c8fb-a58c-4ae7-a5c7-f2edb821497e.png"
@@ -20,95 +15,9 @@
     "generationId": "exec-a0a8ac77-695b-4ef1-9dc5-a3d47e546eed.png"
   },
   {
-    "name": "home-ritual",
-    "prompt": "Use case: photorealistic-natural. Asset: premium at-home beauty editorial portrait, vertical 4:5. Relaxed adult woman with dark hair wearing a white spa robe seated near a sunlit window, enjoying a quiet self-care moment at home, eyes softly closed, one hand near her face, elegantly composed from waist up. Sophisticated warm cream home interior, linen curtains, pale lavender cushion and white blossoms. Realistic skin texture, candid serene warmth, luxury editorial campaign photograph, soft film grain, no text logos watermark.",
-    "generationId": "exec-4ada0429-4dd3-4c56-add3-95b244453894.png"
-  },
-  {
-    "name": "pedicure",
-    "prompt": "Use case: photorealistic-natural. Asset: premium home pedicure editorial photograph, landscape 3:2. Adult woman's feet with neatly shaped softly pink polished toenails resting naturally on a rolled cream spa towel beside a warm stone ceramic foot basin, subtle white frangipani flowers, nail-care tools arranged neatly and folded linen. Modest close crop below knees only. Luxury home setting, warm soft daylight, natural skin texture, calm sophisticated ivory champagne blush palette, realistic anatomy, premium spa magazine photography, no text logo watermark.",
-    "generationId": "exec-92e82965-5a4d-4698-9df6-804fdc836cb6.png"
-  },
-  {
-    "name": "ritual-collection",
-    "prompt": "Use case: photorealistic-natural. Asset: wide 3:2 luxury at-home beauty campaign still life for a website catalogue. Refined travertine table in a sunlit cream living room, a ceramic bowl of amber sugar paste, folded ivory towels, a wooden hairbrush and elegant comb, subtle lavender polish bottle, small gold manicure tools, white frangipani flowers. Objects clustered naturally across lower right, warm soft architectural background and generous negative space at upper left. Quiet high-end editorial photography, natural textures, champagne and ivory with subtle plum accents. No people, no writing, no branding, no laptop, no UI.",
-    "generationId": "exec-b02e7f3c-329c-46bc-a102-c344090e104a.png"
-  },
-  {
-    "name": "sugaring-ritual",
-    "prompt": "Use case: photorealistic-natural. Asset: vertical 4:5 luxury sugaring beauty editorial photograph. Close crop of an adult woman's lower leg resting on ivory linen, a beauty practitioner's clean gloved hand gently applying a small amount of translucent amber sugar paste with a fresh wooden spatula on the shin. Modest crop below knee only, no intimate areas, no redness or injury. Warm softly illuminated home spa, blurred ceramic bowl and frangipani in background, realistic natural skin and hands, premium editorial composition, cream honey champagne palette, no text logos or watermark.",
-    "generationId": "exec-6f1bb15a-760b-469f-a46d-cf7b7e0ff029.png"
-  },
-  {
-    "name": "hair-chignon",
-    "prompt": "Use case: photorealistic-natural. Asset: vertical 4:5 luxury hair fashion editorial. Back three-quarter portrait of an adult woman with rich dark brown hair in a softly sculpted low chignon, a few refined face-framing strands, cream satin blouse and very small gold earring. Elegant sunlit home with ivory linen curtain softly out of focus, head fully in frame with room above. Hair is the clear subject. Natural detailed strands, warm champagne tones, premium salon advertising photograph, no words logos or watermark.",
-    "generationId": "exec-7330bceb-3583-4cfa-9065-9100d2e436b5.png"
-  },
-  {
-    "name": "hair-sleek",
-    "prompt": "Use case: photorealistic-natural. Asset: vertical 4:5 luxury hair fashion portrait. Adult woman seen from back three-quarter profile with long, sleek, softly glossy dark chocolate hair falling straight over a cream satin blouse, one small gold earring. Modern warm beige home interior, late afternoon soft light, elegant editorial pose, hair is the focus, realistic natural strands and skin. Head fully framed, generous upper margin. Sophisticated salon campaign photography, no writing logos or watermark.",
-    "generationId": "exec-6c744458-6e5f-4f5f-bf27-06ac8dc07602.png"
-  },
-  {
-    "name": "nail-detail",
-    "prompt": "Use case: photorealistic-natural. Asset: landscape 3:2 premium nail beauty editorial close-up. Two anatomically correct adult female hands with a soft natural French manicure, short almond nails and understated fine gold ring, resting elegantly across draped pale lavender silk on warm cream stone. A tiny white frangipani bloom, no busy props. Hands are central with plenty of texture and breathing room. Soft natural sidelight, realistic skin and fingers, refined luxury campaign photography, no writing, labels, branding or watermark.",
-    "generationId": "exec-2297fd1b-987e-453a-9022-36fee722201f.png"
-  },
-  {
-    "name": "heritage-still-life",
-    "prompt": "Use case: photorealistic-natural. Asset: vertical 4:5 brand heritage editorial still life. Warm amber sugar paste in a handmade ceramic bowl, whole and cut lemons, a small silver-toned traditional decorative tray with delicate geometric etching, white blossoms and loosely woven ivory linen on an aged warm stone tabletop. Beautiful natural sunlight and soft shadow, dignified restrained editorial beauty photography. Rich honey, warm ivory, muted bronze palette. No text, people, logos or watermark.",
-    "generationId": "exec-2e432b34-a42c-48c8-89ae-1018d02c371b.png"
-  },
-  {
-    "name": "uae-courtyard",
-    "prompt": "Use case: photorealistic-natural. Asset: wide 3:2 location-inspired architectural editorial photograph for a luxury UAE home beauty brand. A serene contemporary Gulf-inspired residential courtyard with warm ivory plaster arches, limestone floor, a delicate date palm shadow, a large understated ceramic vase and linen curtains at an open doorway. Warm early morning light, refined quiet luxury architecture, no people, no actual recognizable property or specific city landmarks, no text, no logos. Composition with clean left architectural negative space and doorway toward right.",
-    "generationId": "exec-27fbf25d-d362-40bb-b5f5-4276611b4af9.png"
-  },
-  {
-    "name": "beauty-arrival",
-    "prompt": "Use case: photorealistic-natural. Asset: vertical 4:5 at-home beauty editorial still life for a contact page. A sophisticated open neutral linen beauty bag with neatly arranged wooden hairbrush, fresh folded ivory towels and simple unbranded glass care bottles on a cream ottoman beside a sunlit window. A small vase of white flowers, soft lavender cushion in background, contemporary warm home interior, calm elegant premium editorial photography. Realistic textures, no text logos or watermark.",
-    "generationId": "exec-1fd16b92-6a3f-464b-92f6-6effc6108a43.png"
-  },
-  {
-    "name": "emirates/dubai",
-    "prompt": "Use case: photorealistic-natural. Asset: wide 3:2 editorial location photograph for a luxury UAE home beauty brand. Scene: a serene Dubai waterfront at golden hour with the Burj Khalifa recognizable in the distant softly hazy skyline, elegant palm trees and warm ivory architecture at the edge of the frame. Sophisticated travel-magazine photography, authentic architectural or natural textures, restrained warm ivory champagne and muted lavender-grey highlights, natural gentle light, visually balanced with breathing room. No people, no words, logos, signs, watermarks, UI, beauty products, business premises or claims of a branch. This is location-inspired editorial scenery.",
-    "generation": "exec-d80a7132-2414-4624-8a8a-e9696dbc5bd1.png",
-    "usage": "Location-inspired editorial illustration; not a verified branch or business premises."
-  },
-  {
-    "name": "emirates/abu-dhabi",
-    "prompt": "Use case: photorealistic-natural. Asset: wide 3:2 editorial location photograph for a luxury UAE home beauty brand. Scene: Abu Dhabi Corniche-inspired waterfront, a graceful warm cream promenade with palms, calm turquoise water and a refined modern skyline in the distance, no religious building focus. Sophisticated travel-magazine photography, authentic architectural or natural textures, restrained warm ivory champagne and muted lavender-grey highlights, natural gentle light, visually balanced with breathing room. No people, no words, logos, signs, watermarks, UI, beauty products, business premises or claims of a branch. This is location-inspired editorial scenery.",
-    "generation": "exec-18e584c0-b2bc-46a1-941c-31ec3ca08bc9.png",
-    "usage": "Location-inspired editorial illustration; not a verified branch or business premises."
-  },
-  {
-    "name": "emirates/sharjah",
-    "prompt": "Use case: photorealistic-natural. Asset: wide 3:2 editorial location photograph for a luxury UAE home beauty brand. Scene: a Sharjah heritage-inspired street with warm ivory and sand-coloured traditional Gulf courtyard walls, a graceful wind tower and a palm shadow, quiet morning architectural light. Sophisticated travel-magazine photography, authentic architectural or natural textures, restrained warm ivory champagne and muted lavender-grey highlights, natural gentle light, visually balanced with breathing room. No people, no words, logos, signs, watermarks, UI, beauty products, business premises or claims of a branch. This is location-inspired editorial scenery.",
-    "generation": "exec-9e0f8371-fcdc-4bc3-a104-c017f19c809d.png",
-    "usage": "Location-inspired editorial illustration; not a verified branch or business premises."
-  },
-  {
-    "name": "emirates/ajman",
-    "prompt": "Use case: photorealistic-natural. Asset: wide 3:2 editorial location photograph for a luxury UAE home beauty brand. Scene: an Ajman-inspired tranquil coastline, pale sand, calm soft turquoise water, a few palms framing a refined cream promenade, an open spacious morning composition. Sophisticated travel-magazine photography, authentic architectural or natural textures, restrained warm ivory champagne and muted lavender-grey highlights, natural gentle light, visually balanced with breathing room. No people, no words, logos, signs, watermarks, UI, beauty products, business premises or claims of a branch. This is location-inspired editorial scenery.",
-    "generation": "exec-14be2246-c107-4b5c-81bc-e59b6e477e08.png",
-    "usage": "Location-inspired editorial illustration; not a verified branch or business premises."
-  },
-  {
-    "name": "emirates/ras-al-khaimah",
-    "prompt": "Use case: photorealistic-natural. Asset: wide 3:2 editorial location photograph for a luxury UAE home beauty brand. Scene: the dramatic Hajar mountains of Ras Al Khaimah in soft morning sunlight, warm terracotta and cream rock layers with a quiet valley and a little palm greenery in the foreground. Sophisticated travel-magazine photography, authentic architectural or natural textures, restrained warm ivory champagne and muted lavender-grey highlights, natural gentle light, visually balanced with breathing room. No people, no words, logos, signs, watermarks, UI, beauty products, business premises or claims of a branch. This is location-inspired editorial scenery.",
-    "generation": "exec-3b5878ee-1227-4d8f-90ee-add8cd351011.png",
-    "usage": "Location-inspired editorial illustration; not a verified branch or business premises."
-  },
-  {
-    "name": "emirates/fujairah",
-    "prompt": "Use case: photorealistic-natural. Asset: wide 3:2 editorial location photograph for a luxury UAE home beauty brand. Scene: a Fujairah-inspired East Coast landscape with the Hajar mountains meeting a calm pale-blue sea, warm cream shoreline, elegant natural light and soft atmospheric detail. Sophisticated travel-magazine photography, authentic architectural or natural textures, restrained warm ivory champagne and muted lavender-grey highlights, natural gentle light, visually balanced with breathing room. No people, no words, logos, signs, watermarks, UI, beauty products, business premises or claims of a branch. This is location-inspired editorial scenery.",
-    "generation": "exec-8315f6ad-c108-4531-a6b2-e826f69786f9.png",
-    "usage": "Location-inspired editorial illustration; not a verified branch or business premises."
-  },
-  {
-    "name": "emirates/umm-al-quwain",
-    "prompt": "Use case: photorealistic-natural. Asset: wide 3:2 editorial location photograph for a luxury UAE home beauty brand. Scene: Umm Al Quwain-inspired mangroves and a tranquil lagoon, soft sage green trees, a simple elegant pale timber boardwalk and calm blue water, quiet late-afternoon light. Sophisticated travel-magazine photography, authentic architectural or natural textures, restrained warm ivory champagne and muted lavender-grey highlights, natural gentle light, visually balanced with breathing room. No people, no words, logos, signs, watermarks, UI, beauty products, business premises or claims of a branch. This is location-inspired editorial scenery.",
-    "generation": "exec-e2ccd693-7fee-4bdf-be73-d285b0b7ebd7.png",
-    "usage": "Location-inspired editorial illustration; not a verified branch or business premises."
+    "name": "sudanese-halwa",
+    "prompt": "Use case: product-mockup. Asset: square premium beauty product photograph for a small circular website thumbnail. Match the reference composition described: one small round warm wooden bowl holding seven round dark chestnut-brown glossy Sudanese halwa sugar depilation paste balls, looking like smooth hand-rolled pieces of dark amber toffee with warm glossy highlights. All pieces are solid spheres, no golden liquid, no syrup puddles, no honey, no food styling. A neat pile about two levels high. Photograph from a slightly elevated front view, full bowl centered with generous clear margin in all directions so it fits in a round crop. Seamless pale warm peach cream studio background and soft shadows. Luxury beauty editorial, warm diffused light, natural grain in the wooden bowl. No hands, no props, no text, no watermark.",
+    "generation": "exec-b514e54f-1354-4e5f-8a28-af9099bff68a.png",
+    "tool": "Built-in ImageGen"
   }
 ]

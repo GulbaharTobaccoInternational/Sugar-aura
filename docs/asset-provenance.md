@@ -1,26 +1,7 @@
 # Asset provenance
 
-The original six photographic assets were generated for this project with the built-in image-generation tool. None is stock photography, and none represents a verified client, provider, actual premises or completed treatment. Prompts and generation identifiers are preserved in `image-prompts.json`.
-
-| Delivered asset | Purpose |
-| --- | --- |
-| `public/images/hero.webp` | Warm cream home portrait, lavender mug and robe; homepage campaign |
-| `public/images/sugaring.webp` | Amber sugar-paste still life with lemon, linen and flowers |
-| `public/images/hair.webp` | Glossy soft-wave hair editorial |
-| `public/images/manicure.webp` | Nude-pink nail editorial on ivory linen |
-| `public/images/home-ritual.webp` | Quiet window-side self-care portrait |
-| `public/images/pedicure.webp` | Pedicure editorial with towels and foot-care accessories |
-| `public/images/og.jpg` | 1200 × 630 crop of the generated campaign portrait |
-
-The final WebP photographs are roughly 105–186 KB each. `scripts/optimize-images.mjs` can create replacement WebP assets from a folder of newly generated PNG files with the same base filenames. Final site assets are bundled locally and require no access to the generator’s original output directory.
-
-The supplied laptop photograph was used only as visual direction. Neither the laptop nor the screenshot is embedded in the website. The mark and wordmark are original SVG vectors created directly in code; they are not raster-generated logos. Fontsource packages bundle the fonts under their included SIL Open Font License notices. Lucide supplies the interface icons under its ISC license.
-
-## Phase 2 additions
-
-Eight additional original photographs were generated with the built-in image-generation tool: `ritual-collection.webp`, `sugaring-ritual.webp`, `hair-chignon.webp`, `hair-sleek.webp`, `nail-detail.webp`, `heritage-still-life.webp`, `uae-courtyard.webp` and `beauty-arrival.webp`. They are locally optimized editorial illustrations. The architectural image depicts a Gulf-inspired setting, not a verified business property or a claim of service coverage. The treatment and hair/nail photographs are not evidence of actual providers or client results. Full prompts and generation identifiers are in `image-prompts.json`.
-
-
-## Launch location imagery
-
-Seven additional location-inspired editorial photographs illustrate Dubai, Abu Dhabi, Sharjah, Ajman, Ras Al Khaimah, Fujairah and Umm Al Quwain. These were generated with the built-in image-generation tool and optimized locally as 1440px WebP assets in `public/images/emirates/`. They illustrate the intended enquiry locations; they do not represent branches, verified business premises or guaranteed operational coverage. All prompts and generation identifiers are in `image-prompts.json`.
+- The approved Sugar & Aura artwork is preserved byte for byte in `branding/sugar-and-aura-official-original.jpg`. The optimized WebP uses the supplied full composition. The header matches its purple background. The favicon uses a crop of the supplied butterfly.
+- `public/images/hero.webp`, `hair.webp` and `manicure.webp` are the retained editorial photographs. `og.jpg` is a crop of the hero.
+- `public/images/sudanese-halwa.webp` is an illustrated product photograph generated with built-in ImageGen from the user's wooden-bowl reference. The site uses a 480-pixel WebP for the circular service image.
+- Original generation prompts for the retained photographs and the Halwa image are in `image-prompts.json`.
+- Fontsource packages provide the local fonts under their included SIL Open Font License notices. Lucide supplies the outline icons.

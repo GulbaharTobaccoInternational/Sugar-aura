@@ -1,6 +1,0 @@
-import type {Metadata} from 'next';
-import Image from 'next/image';
-import {FAQBrowser} from '@/components/phase-two/interactions';
-import {TextLink} from '@/components/shared';
-export const metadata:Metadata={title:'Frequently Asked Questions',description:'Search thoughtful answers about booking, coverage, sugaring, hair styling, and manicure and pedicure. Clear details for your at-home beauty experience.',alternates:{canonical:'/faq'}};
-export default function FAQPage(){return <div className="phase-two questions-page"><section className="questions-hero container"><div><p className="eyebrow">THE LITTLE THINGS YOU MIGHT BE WONDERING</p><h1>A little curiosity.<br/><em>A thoughtful answer.</em></h1><p>From your first question to the details of your ritual.<br/>Find a little clarity before you begin.</p></div><Image src="/branding/butterfly.svg" alt="" width={110} height={100}/></section><section className="container questions-content"><FAQBrowser/></section><section className="questions-contact container"><p className="eyebrow">STILL SOMETHING ON YOUR MIND?</p><h2>Let’s make it<br/><em>a conversation.</em></h2><TextLink href="/contact">View contact options</TextLink></section></div>}
