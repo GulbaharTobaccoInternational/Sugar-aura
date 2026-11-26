@@ -1,6 +1,6 @@
 'use client';
 
-import Image from 'next/image';
+import { BrandLockup } from './brand-lockup';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useEffect, useRef, useState } from 'react';
@@ -24,13 +24,13 @@ export function Header() {
   const active = (href: string) => href === '/' ? pathname === '/' : pathname.startsWith(href);
   return <header className={`site-header ${scrolled ? 'scrolled' : ''}`}>
     <div className="nav-shell">
-      <Link className="brand" href="/" aria-label="Sugar and Aura home"><Image src="/branding/logo-light.svg" alt="Sugar & Aura — Traditional Sudanese Sweet" width={315} height={75} priority /></Link>
+      <Link className="brand" href="/" aria-label="Sugar and Aura home, Traditional Sudanese Halwa"><BrandLockup eager /></Link>
       <nav className="desktop-nav" aria-label="Main navigation">{navigation.map(item => <Link key={item.href} href={item.href} className={active(item.href) ? 'active' : ''} aria-current={active(item.href) ? 'page' : undefined}>{item.label}</Link>)}</nav>
       <BookButton className="header-book" />
       <button ref={trigger} className="menu-trigger icon-button" aria-label="Open navigation menu" aria-haspopup="dialog" onClick={() => openDialog()}><Menu size={27} /></button>
     </div>
     <dialog ref={menu} className="mobile-menu" data-closing={closing || undefined} aria-label="Navigation menu" onKeyDown={onDialogKeyDown} onCancel={onDialogCancel} onClose={onDialogClose}>
-      <div className="mobile-menu-top"><Link href="/" onClick={close}><Image src="/branding/logo-light.svg" alt="Sugar & Aura" width={230} height={55} /></Link><button onClick={() => closeDialog()} className="icon-button" aria-label="Close navigation menu"><X size={25} /></button></div>
+      <div className="mobile-menu-top"><Link href="/" onClick={close} aria-label="Sugar and Aura home, Traditional Sudanese Halwa"><BrandLockup /></Link><button onClick={() => closeDialog()} className="icon-button" aria-label="Close navigation menu"><X size={25} /></button></div>
       <p className="eyebrow">A LITTLE TIME, JUST FOR YOU</p>
       <nav aria-label="Mobile navigation">{navigation.map((item, index) => <Link key={item.href} href={item.href} className={active(item.href) ? 'active' : ''} aria-current={active(item.href) ? 'page' : undefined} onClick={close}><span className="menu-number">0{index + 1}</span>{item.label}<ArrowUpRight size={20} /></Link>)}</nav>
       <BookButton onClick={close} />

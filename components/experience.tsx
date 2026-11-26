@@ -1,58 +1,31 @@
 'use client';
 
-import { createContext, useCallback, useContext, useEffect, useId, useRef, useState, useSyncExternalStore, type ReactNode } from 'react';
+import { useEffect, useId, useRef, useState, useSyncExternalStore, type ReactNode } from 'react';
 import Link from 'next/link';
-import { ArrowRight, Check, X } from 'lucide-react';
+import { ArrowRight, Check } from 'lucide-react';
 import { AnimatePresence, motion, MotionConfig, useAnimationControls, useReducedMotion, useScroll, useTransform } from 'motion/react';
-import { usePathname } from 'next/navigation';
-import { createWhatsAppUrl, serviceFromPath, type BookingIntent } from '@/lib/booking';
-import { useDialog } from './use-dialog';
+import { whatsappUrl } from '@/lib/booking';
 import { services, type FAQ } from '@/lib/content/services';
 
-const BookingContext = createContext<(intent?: BookingIntent) => void>(() => {});
 const subscribeReady = () => () => {};
 const clientReady = () => true;
 const serverReady = () => false;
 function useClientReady() { return useSyncExternalStore(subscribeReady, clientReady, serverReady); }
 
 export function ExperienceProvider({ children }: { children: ReactNode }) {
-  const { ref: dialog, open: openDialog, close: closeDialog, onClose: onDialogClose, onCancel: onDialogCancel, onKeyDown: onDialogKeyDown, closing } = useDialog();
-  const pathname = usePathname();
-  const remembered = useRef<BookingIntent>({});
-  const [intent, setIntent] = useState<BookingIntent>({});
-  const open = useCallback((selected: BookingIntent = {}) => {
-    const service = selected.service ?? serviceFromPath(pathname) ?? remembered.current.service;
-    const next = { ...remembered.current, ...selected, ...(service ? { service } : {}) };
-    remembered.current = next;
-    setIntent(next);
-    openDialog();
-  }, [pathname, openDialog]);
-  return (
-    <MotionConfig reducedMotion="user">
-      <BookingContext.Provider value={open}>
-        {children}
-        <dialog ref={dialog} className="booking-dialog" data-closing={closing || undefined} aria-labelledby="booking-title" aria-describedby="booking-description" onKeyDown={onDialogKeyDown} onCancel={onDialogCancel} onClose={onDialogClose} onClick={(event) => {
-          if (event.target === dialog.current) {
-            const box = dialog.current.getBoundingClientRect();
-            if (event.clientX < box.left || event.clientX > box.right || event.clientY < box.top || event.clientY > box.bottom) closeDialog();
-          }
-        }}>
-          <button className="icon-button dialog-close" aria-label="Close booking information" onClick={() => closeDialog()}><X size={21} /></button>
-          <span className="modal-butterfly" aria-hidden="true">✧</span>
-          <p className="eyebrow">YOUR BEAUTY, OUR PRIORITY</p>
-          <h2 id="booking-title">Your next little<br /><em>moment of care.</em></h2>
-          <p id="booking-description">A little time for yourself, a beautiful experience at home. Let us help you plan your perfect beauty appointment.</p>
-          <a href={createWhatsAppUrl(intent)} className="button button-gold" target="_blank" rel="noopener noreferrer">ARRANGE MY APPOINTMENT <ArrowRight size={17} /></a>
-          <p className="small-copy">Continue your booking conversation on WhatsApp.</p>
-        </dialog>
-      </BookingContext.Provider>
-    </MotionConfig>
-  );
+  return <MotionConfig reducedMotion="user">{children}</MotionConfig>;
 }
 
-export function BookButton({ children = 'Book now', className = '', onClick, service, emirate }: { children?: ReactNode; className?: string; onClick?: () => void } & BookingIntent) {
-  const open = useContext(BookingContext);
-  return <button type="button" className={`button button-gold ${className}`} onClick={() => { onClick?.(); open({ ...(service ? { service } : {}), ...(emirate ? { emirate } : {}) }); }}>{children}<ArrowRight size={18} strokeWidth={1.5} /></button>;
+export function BookButton({ children = 'Book now', className = '', onClick }: {
+  children?: ReactNode;
+  className?: string;
+  onClick?: () => void;
+}) {
+  return (
+    <a className={`button button-gold booking-link ${className}`} href={whatsappUrl} target="_blank" rel="noopener noreferrer" onClick={onClick}>
+      {children}<ArrowRight size={18} strokeWidth={1.5} aria-hidden="true" />
+    </a>
+  );
 }
 
 export function Reveal({ children, className = '', delay = 0 }: { children: ReactNode; className?: string; delay?: number }) {

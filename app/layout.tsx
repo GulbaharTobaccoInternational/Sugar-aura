@@ -18,9 +18,9 @@ import './refinements.css';
 export const metadata: Metadata = {
   metadataBase: new URL(business.siteUrl),
   title: { default: 'Sugar & Aura | Beautiful Days at Home', template: '%s | Sugar & Aura' },
-  description: 'Discover Traditional Sudanese Sweet, hair styling, and manicure and pedicure. Thoughtful beauty rituals in the comfort of your home in the UAE.',
+  description: 'Discover Traditional Sudanese Halwa, hair styling, and manicure and pedicure. Thoughtful beauty rituals in the comfort of your home in the UAE.',
   applicationName: 'Sugar & Aura',
-  openGraph: { type: 'website', locale: 'en_AE', siteName: 'Sugar & Aura', title: 'Sugar & Aura — Beautiful Days at Home', description: 'Beauty rituals inspired by tradition. Thoughtfully brought home.', images: [{ url: '/images/og.jpg', width: 1200, height: 630, alt: 'Sugar & Aura — warm, thoughtful beauty at home' }] },
+  openGraph: { type: 'website', locale: 'en_AE', siteName: 'Sugar & Aura', title: 'Sugar & Aura — Beautiful Days at Home', description: 'Traditional Sudanese Halwa, hair styling and nail care. Thoughtfully brought home.', images: [{ url: '/images/og.jpg', width: 1200, height: 630, alt: 'Sugar & Aura — warm, thoughtful beauty at home' }] },
   twitter: { card: 'summary_large_image', images: ['/images/og.jpg'] },
 };
 export const viewport: Viewport = { width: 'device-width', initialScale: 1, themeColor: '#300847' };

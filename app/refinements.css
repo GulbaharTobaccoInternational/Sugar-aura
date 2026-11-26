@@ -31,23 +31,14 @@
 .phase-two h1 { animation-duration:.38s; }
 .phase-two h1 em { animation-duration:.3s; animation-delay:.07s; }
 /* Native dialogs retain focus trapping and inert backgrounds during their close. */
-.booking-dialog[open] { animation:booking-in .4s cubic-bezier(.22,1,.36,1) both; }
-.booking-dialog[open]::backdrop,.gallery-dialog[open]::backdrop { animation:backdrop-in .35s ease both; }
-.booking-dialog[open]>:not(.dialog-close) { animation:modal-content-in .28s cubic-bezier(.22,1,.36,1) both; }
-.booking-dialog[open]>.eyebrow { animation-delay:.035s; }
-.booking-dialog[open]>h2 { animation-delay:.065s; }
-.booking-dialog[open]>#booking-description { animation-delay:.095s; }
-.booking-dialog[open]>.button { animation-delay:.12s; }
-.booking-dialog[open]>.small-copy { animation-delay:.14s; }
-.booking-dialog[data-closing] { animation:booking-out .21s ease both; }
-.booking-dialog[data-closing]::backdrop,.gallery-dialog[data-closing]::backdrop { animation:backdrop-out .21s ease both; }
-.booking-dialog .small-copy { margin-top:16px!important; }
+.gallery-dialog[open]::backdrop { animation:backdrop-in .35s ease both; }
+.gallery-dialog[data-closing]::backdrop { animation:backdrop-out .21s ease both; }
 .mobile-menu[open] { animation:menu-in .28s cubic-bezier(.22,1,.36,1) both; }
 .mobile-menu[open]::backdrop { animation:backdrop-in .26s ease both; }
 .mobile-menu[data-closing] { animation:menu-out .26s ease both; }
 .mobile-menu[data-closing]::backdrop { animation:backdrop-out .26s ease both; }
-.gallery-dialog[open] { animation:booking-in .3s cubic-bezier(.22,1,.36,1) both; }
-.gallery-dialog[data-closing] { animation:booking-out .21s ease both; }
+.gallery-dialog[open] { animation:gallery-in .3s cubic-bezier(.22,1,.36,1) both; }
+.gallery-dialog[data-closing] { animation:gallery-out .21s ease both; }
 .lightbox-photo { animation:photo-crossfade .26s ease-out; }
 .lightbox-controls button { border:1px solid #e5c78e50; transition:background .2s,border-color .2s,transform .2s; }
 .lightbox-controls button:hover { background:#e5c78e15; border-color:var(--gold); }
@@ -63,9 +54,8 @@
 .contact-form input:focus,.contact-form select:focus,.contact-form textarea:focus { border-color:#b08b50; background:#fffaf4; box-shadow:0 0 0 3px #cba15c10; }
 .faq-search:focus-within { border-color:var(--gold); }
 .back-to-top { transition:background .2s,color .2s,transform .2s; }
-@keyframes booking-in { from { opacity:0; transform:translateY(12px) scale(.97); } to { opacity:1; transform:translateY(0) scale(1); } }
-@keyframes booking-out { from { opacity:1; transform:translateY(0) scale(1); } to { opacity:0; transform:translateY(6px) scale(.985); } }
-@keyframes modal-content-in { from { opacity:0; transform:translateY(5px); } to { opacity:1; transform:translateY(0); } }
+@keyframes gallery-in { from { opacity:0; transform:translateY(12px) scale(.97); } to { opacity:1; transform:translateY(0) scale(1); } }
+@keyframes gallery-out { from { opacity:1; transform:translateY(0) scale(1); } to { opacity:0; transform:translateY(6px) scale(.985); } }
 @keyframes backdrop-in { from { opacity:0; } to { opacity:1; } }
 @keyframes backdrop-out { from { opacity:1; } to { opacity:0; } }
 @keyframes menu-in { from { opacity:0; transform:translateX(24px); } to { opacity:1; transform:translateX(0); } }
@@ -120,9 +110,33 @@
   .location-hero { min-height:520px; height:auto; }
   .location-hero-copy { min-height:520px; padding-block:65px; }
   .location-hero h1 { font-size:clamp(54px,12vw,82px); }
-  .booking-dialog .button { max-width:100%; white-space:normal; gap:16px; font-size:10px; padding-inline:22px; }
 }
 @media(prefers-reduced-motion:reduce) {
   *,*::before,*::after { animation:none!important; transition:none!important; scroll-behavior:auto!important; }
   .button:hover,.text-link:hover svg,.picture img { transform:none!important; }
+}
+
+/* Approved brand artwork in the existing header, drawer and footer lockups. */
+.brand-lockup {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 75px;
+  gap: 11px;
+  align-items: center;
+}
+.brand-lockup > img { display: block; width: 100%; height: auto; margin: 0; }
+.brand-descriptor {
+  border-left: 1px solid #cba15c72;
+  padding-left: 9px;
+  color: var(--soft-gold);
+  font-size: 8px;
+  line-height: 1.6;
+  letter-spacing: .13em;
+  text-transform: uppercase;
+}
+.mobile-menu-top .brand-lockup { width: min(230px, 66vw); }
+.footer-brand .brand-lockup { width: min(285px, 100%); }
+.footer-brand .brand-lockup > img { width: 100%; margin: 0; }
+@media (max-width: 767px) {
+  .brand-lockup { grid-template-columns: minmax(0, 1fr) 62px; gap: 9px; }
+  .brand-descriptor { font-size: 7px; padding-left: 8px; }
 }

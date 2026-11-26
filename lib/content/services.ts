@@ -8,10 +8,10 @@ export type Service = {
 
 export const services: Service[] = [
   {
-    slug: 'sudanese-sweet', number: '01', title: 'Traditional Sudanese Sweet', shortTitle: 'Sudanese Sweet',
+    slug: 'sudanese-halwa', number: '01', title: 'Traditional Sudanese Halwa', shortTitle: 'Sudanese Halwa',
     eyebrow: 'OUR SIGNATURE RITUAL', tagline: 'Rooted in tradition. Considered for you.',
     description: 'Discover a time-honoured sugar-based hair-removal ritual, brought into the comfort of your own space.',
-    image: '/images/sugaring.webp', imageAlt: 'Warm amber sugar paste with lemon, linen and delicate white flowers',
+    image: '/images/sudanese-halwa.webp', imageAlt: 'Glossy dark brown Sudanese Halwa paste balls in a small wooden bowl',
     introTitle: 'A little sweetness. A beautiful tradition.',
     intro: 'Sugaring is a traditional method of hair removal using a sugar-based paste. Sudanese beauty traditions give this ritual a meaningful place in personal care. At Sugar & Aura, that heritage inspires a thoughtful, unhurried approach. The precise paste, technique and areas treated are discussed before a service is confirmed.',
     experience: [
@@ -22,7 +22,7 @@ export const services: Service[] = [
     preparation: ['Discuss recent hair removal, skincare products and any skin sensitivity before confirming a visit.', 'Ask your provider about suitable hair length and how to prepare the areas you have selected.', 'Prepare a clean, comfortable space with privacy and enough room for your treatment.'],
     aftercare: ['Follow the individual aftercare instructions given by your provider.', 'Treat freshly sugared skin gently and discuss when to resume your usual products and routines.', 'If you have an active skin concern or are unsure about suitability, seek advice from a qualified healthcare professional before booking.'],
     faqs: [
-      { question: 'What is Traditional Sudanese Sweet?', answer: 'It is a traditional hair-removal ritual using sugar-based paste. Ingredients, consistency and application methods can differ. Ask about the exact service before you confirm your visit.' },
+      { question: 'What is Traditional Sudanese Halwa?', answer: 'It is a traditional hair-removal ritual using sugar-based paste. Ingredients, consistency and application methods can differ. Ask about the exact service before you confirm your visit.' },
       { question: 'Is sugaring suitable for everyone?', answer: 'Suitability is individual. Share any sensitivities, active skin concerns, allergies or relevant treatments with your provider. A qualified healthcare professional can advise if you have a medical concern.' },
       { question: 'What results can I expect?', answer: 'Sugaring removes hair from the treated area. How the skin feels and how long results last vary with hair growth, technique and individual response; results are not guaranteed.' },
       { question: 'Can I choose the treatment areas?', answer: 'Tell us what you have in mind when discussing an enquiry. The provider will confirm the available areas, suitability and service details before any appointment is agreed.' },
@@ -73,8 +73,8 @@ export const services: Service[] = [
 ];
 
 export const generalFAQs: FAQ[] = [
-  { question: 'What is Sugar & Aura?', answer: 'Sugar & Aura is a UAE home-beauty concept focused on Traditional Sudanese Sweet, hair styling, and manicure and pedicure. It brings a thoughtful, personal approach to beauty in the comfort of your home.' },
-  { question: 'How do I book a visit?', answer: 'Choose Book Now, then Arrange My Appointment to continue on our official WhatsApp. Your chosen service or emirate is included when known. A visit is only confirmed when the service, location, availability and terms have been agreed directly; opening WhatsApp does not reserve an appointment.' },
+  { question: 'What is Sugar & Aura?', answer: 'Sugar & Aura is a UAE home-beauty concept focused on Traditional Sudanese Halwa, hair styling, and manicure and pedicure. It brings a thoughtful, personal approach to beauty in the comfort of your home.' },
+  { question: 'How do I book a visit?', answer: 'Choose Book Now to open our official WhatsApp in a new tab and start a conversation. A visit is only confirmed when the service, location, availability and terms have been agreed directly; opening WhatsApp does not reserve an appointment.' },
   { question: 'Which areas do you serve?', answer: 'Explore all seven emirates on our Areas page and enquire about your location on WhatsApp. Appointment availability and scheduling may vary by location. Our team will confirm your address, chosen ritual and availability before a visit is agreed.' },
   { question: 'How much do treatments cost?', answer: 'Prices have not yet been published. Request the full price and any location or additional-service charges before agreeing to a visit. No payment is collected on this website.' },
   { question: 'What do I need to prepare at home?', answer: 'A comfortable, private, well-lit space is a helpful starting point. Requirements vary by service, so confirm access, space, water or power needs and any treatment preparation before a visit.' },

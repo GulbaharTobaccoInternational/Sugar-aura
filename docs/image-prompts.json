@@ -5,11 +5,6 @@
     "generationId": "exec-e116fbc6-f5d9-4d2d-9e4a-233c59ca0868.png"
   },
   {
-    "name": "sugaring",
-    "prompt": "Use case: photorealistic-natural. Asset: premium beauty brand editorial macro photograph, landscape 3:2. Rich translucent amber sugar paste curling gently on a wooden spatula above a small artisanal ceramic bowl on warm ivory stone, a cut lemon, subtle white frangipani flowers, folded linen spa towel, tiny gold spoon. A quiet home beauty ritual still life. Soft warm side light, creamy shallow depth of field, authentic material textures, premium magazine photography, palette honey amber warm beige cream, no text or logos, no people.",
-    "generationId": "exec-0a210706-bea6-4b24-b93d-3da080f2fd7b.png"
-  },
-  {
     "name": "hair",
     "prompt": "Use case: photorealistic-natural. Asset: premium hair styling editorial portrait, vertical 4:5. Beautiful adult woman seen from behind with long dark chocolate glossy hair styled in soft elegant sculptural waves, wearing a cream satin blouse, in a warmly sunlit luxurious home. Hair is the focus, luminous natural highlights, hand gently touching a curl, soft warm ivory wall and linen curtains in background, refined magazine beauty campaign photography, realistic textures, rich brown ivory champagne palette, no text logos or watermark.",
     "generationId": "exec-ee99c8fb-a58c-4ae7-a5c7-f2edb821497e.png"
@@ -110,5 +105,11 @@
     "prompt": "Use case: photorealistic-natural. Asset: wide 3:2 editorial location photograph for a luxury UAE home beauty brand. Scene: Umm Al Quwain-inspired mangroves and a tranquil lagoon, soft sage green trees, a simple elegant pale timber boardwalk and calm blue water, quiet late-afternoon light. Sophisticated travel-magazine photography, authentic architectural or natural textures, restrained warm ivory champagne and muted lavender-grey highlights, natural gentle light, visually balanced with breathing room. No people, no words, logos, signs, watermarks, UI, beauty products, business premises or claims of a branch. This is location-inspired editorial scenery.",
     "generation": "exec-e2ccd693-7fee-4bdf-be73-d285b0b7ebd7.png",
     "usage": "Location-inspired editorial illustration; not a verified branch or business premises."
+  },
+  {
+    "name": "sudanese-halwa",
+    "prompt": "Use case: product-mockup. Asset: square premium beauty product photograph for a small circular website thumbnail. Match the reference composition described: one small round warm wooden bowl holding seven round dark chestnut-brown glossy Sudanese halwa sugar depilation paste balls, looking like smooth hand-rolled pieces of dark amber toffee with warm glossy highlights. All pieces are solid spheres, no golden liquid, no syrup puddles, no honey, no food styling. A neat pile about two levels high. Photograph from a slightly elevated front view, full bowl centered with generous clear margin in all directions so it fits in a round crop. Seamless pale warm peach cream studio background and soft shadows. Luxury beauty editorial, warm diffused light, natural grain in the wooden bowl. No hands, no props, no text, no watermark.",
+    "generation": "exec-b514e54f-1354-4e5f-8a28-af9099bff68a.png",
+    "tool": "Built-in ImageGen"
   }
 ]

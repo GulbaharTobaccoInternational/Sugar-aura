@@ -2,7 +2,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import assert from 'node:assert/strict';
 const root = path.resolve('out');
-const routes = ['/', '/services', '/services/sudanese-sweet', '/services/hair-styling', '/services/manicure-pedicure', '/why-us', '/about', '/areas', '/contact', '/faq', '/privacy', '/terms', '/journal', '/journal/the-art-of-at-home-self-care', '/journal/understanding-traditional-sugaring', '/journal/keeping-your-manicure-beautiful'];
+const routes = ['/', '/services', '/services/sudanese-halwa', '/services/hair-styling', '/services/manicure-pedicure', '/why-us', '/about', '/areas', '/contact', '/faq', '/privacy', '/terms', '/journal', '/journal/the-art-of-at-home-self-care', '/journal/understanding-traditional-sugaring', '/journal/keeping-your-manicure-beautiful'];
 const titles = new Set();
 const emirates = ['dubai','abu-dhabi','sharjah','ajman','ras-al-khaimah','fujairah','umm-al-quwain'];
 let referenceCount = 0;
@@ -10,6 +10,14 @@ async function exists(file) { try { return (await fs.stat(file)).isFile(); } cat
 for (const route of routes) {
   const file = path.join(root, route, 'index.html');
   const html = await fs.readFile(file, 'utf8');
+  assert.ok(!/Sudanese Sweet|booking-dialog|wa\.me\/971505071965/i.test(html), `Outdated branding or booking: ${route}`);
+  const ctas = [...html.matchAll(/<a\b[^>]*class="[^"]*booking-link[^"]*"[^>]*>/g)];
+  assert.ok(ctas.length > 0, `Missing booking links: ${route}`);
+  for (const [tag] of ctas) {
+    assert.match(tag, /href="https:\/\/wa\.me\/971588807612"/);
+    assert.match(tag, /target="_blank"/);
+    assert.match(tag, /rel="noopener noreferrer"/);
+  }
   const title = html.match(/<title>(.*?)<\/title>/)?.[1];
   assert.ok(title && !titles.has(title), `Missing or duplicate title: ${route}`); titles.add(title);
   assert.equal((html.match(/<h1(?:\s|>)/g) || []).length, 1, `Expected one h1: ${route}`);
@@ -28,7 +36,7 @@ for (const route of routes) {
 assert.ok(await exists(path.join(root,'sitemap.xml')));
 assert.ok(await exists(path.join(root,'robots.txt')));
 assert.ok(await exists(path.join(root,'404.html')));
-for (const name of ['hero','sugaring','hair','manicure','pedicure','home-ritual','ritual-collection','sugaring-ritual','hair-chignon','hair-sleek','nail-detail','heritage-still-life','uae-courtyard','beauty-arrival']) {
+for (const name of ['hero','sudanese-halwa','hair','manicure','pedicure','home-ritual','ritual-collection','sugaring-ritual','hair-chignon','hair-sleek','nail-detail','heritage-still-life','uae-courtyard','beauty-arrival']) {
   const image = await fs.stat(path.join(root,'images',name+'.webp'));
   assert.ok(image.size > 10000 && image.size < 300000, `Unexpected image size: ${name}`);
 }

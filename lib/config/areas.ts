@@ -1,4 +1,4 @@
-import { EMIRATES } from '@/lib/booking';
+const EMIRATES = ['Dubai', 'Abu Dhabi', 'Sharjah', 'Ajman', 'Ras Al Khaimah', 'Fujairah', 'Umm Al Quwain'] as const;
 
 // Intended enquiry coverage. Enable only after UAE-wide operations are verified.
 export const coverageConfirmed = false;

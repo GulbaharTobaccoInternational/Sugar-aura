@@ -29,7 +29,7 @@ The default production build is a standard Next.js application, with responsive 
 
 ## GitHub and Vercel
 
-1. The complete application lives at the root of [GulbaharTobaccoInternational/Sugar-aura](https://github.com/GulbaharTobaccoInternational/Sugar-aura) on the `main` branch. The `.gitignore` excludes dependencies, builds, environment files, private preview metadata and generated reports. Only the commented `.env.example` is included.
+1. The full site is deployed at https://sugaraura2.vercel.app/. Its application lives at the root of [GulbaharTobaccoInternational/Sugar-aura](https://github.com/GulbaharTobaccoInternational/Sugar-aura) on the `original-full-website` branch. The `.gitignore` excludes dependencies, builds, environment files, private preview metadata and generated reports. Only the commented `.env.example` is included.
 2. In Vercel, choose **Add New → Project**, import **GulbaharTobaccoInternational/Sugar-aura** and use **`.`** as the Root Directory.
 3. Keep the **Next.js** framework preset, **Node.js 24.x**, install command `npm ci`, and build command `npm run build`. Leave Output Directory at its framework default. Do not set `SUGAR_STATIC_EXPORT` for Vercel.
 4. Optionally set `NEXT_PUBLIC_SITE_URL` to the final HTTPS custom domain. Otherwise the Vercel production domain supplies canonical, sitemap and Open Graph origins. Deploy. Future pushes to the connected production branch deploy automatically.
@@ -39,9 +39,7 @@ References: [Next.js on Vercel](https://vercel.com/docs/frameworks/full-stack/ne
 
 ## Booking and business configuration
 
-`lib/booking.ts` centrally manages the official WhatsApp number **+971 50 507 1965**, approved copy, service and emirate types, URL encoding and route inference. Main booking buttons open the existing accessible native dialog. Its CTA opens `wa.me` in a new tab with `noopener noreferrer`. Service detail routes infer their service; emirate CTAs pass their location. Selections are remembered in memory during the current visit so known service and location contexts can be combined. No message is sent automatically and no appointment is confirmed by this website.
-
-The utility has tests for the default message, three service messages, seven emirate messages, 21 combined messages and route inference. To change the number, edit only `WHATSAPP_NUMBER` and its human-readable display in `lib/booking.ts`.
+All booking actions open the official WhatsApp number **+971 58 880 7612** directly in a new tab. The shared URL lives in `lib/booking.ts`.
 
 `lib/config/business.ts` holds optional verified email, call number, hours and social links. These remain empty until confirmed. `lib/config/areas.ts` contains the seven intended enquiry locations. `coverageConfirmed` defaults to **false**; wording must not promise UAE-wide appointment availability until verified.
 
@@ -51,7 +49,7 @@ The contact form is deliberately a local demonstration: native validation and a 
 
 - `/` — original home campaign
 - `/services` — service collection and explorer
-- `/services/sudanese-sweet` — signature tradition and ritual process
+- `/services/sudanese-halwa` — signature tradition and ritual process
 - `/services/hair-styling` — styling, gallery, consultation and preparation
 - `/services/manicure-pedicure` — hand/foot tabs, gallery and care
 - `/why-us` — at-home benefits and preference guide

@@ -16,7 +16,7 @@ export function ServiceNext({href,label,number}:{href:string;label:string;number
   return <Link href={href} className="service-next container"><span className="eyebrow">CONTINUE YOUR DISCOVERY</span><span className="service-next-title"><small>{number}</small>{label}<ArrowRight size={34} strokeWidth={1}/></span></Link>;
 }
 export function ButterflySignature({light=false}:{light?:boolean}) {
-  return <div className={`butterfly-signature ${light?'light':''}`}><Image src="/branding/butterfly.svg" alt="" width={70} height={64}/><span className="script">With care, Sugar & Aura</span></div>;
+  return <div className={`butterfly-signature ${light?'light':''}`}><Image src="/branding/official-butterfly.webp" alt="" width={70} height={58}/><span className="script">With care, Sugar & Aura</span></div>;
 }
 export function VisitPreparation({image,title,items}:{image:string;title:string;items:string[]}) {
   return <section className="visit-preparation section-pad container"><Picture src={image} alt="Considered beauty details in a softly lit home"/><Reveal><p className="eyebrow">A LITTLE PREPARATION</p><h2>{title}</h2><ol>{items.map((item,index)=><li key={item}><span>0{index+1}</span><p>{item}</p></li>)}</ol></Reveal></section>;

@@ -9,10 +9,10 @@ export const articles = [
     ],
   },
   {
-    slug: 'understanding-traditional-sugaring', category: 'ROOTED IN TRADITION', title: 'Understanding Traditional Sugaring', image: '/images/sugaring.webp', alt: 'Amber sugar paste and lemon on warm ivory stone', readTime: '4 minute read',
+    slug: 'understanding-traditional-sugaring', category: 'ROOTED IN TRADITION', title: 'Understanding Traditional Sugaring', image: '/images/sudanese-halwa.webp', alt: 'Glossy dark brown Sudanese Halwa paste balls in a small wooden bowl', readTime: '4 minute read',
     intro: 'A familiar ingredient, a traditional technique, and a ritual shaped by personal care. Here is a simple introduction to sugar-based hair removal.',
     sections: [
-      { title: 'What is sugaring?', text: 'Sugaring uses a sugar-based paste to remove hair. The recipe, temperature, consistency and application method can vary between providers. Traditional Sudanese Sweet draws on a beauty heritage in which this ritual has a meaningful place.' },
+      { title: 'What is sugaring?', text: 'Sugaring uses a sugar-based paste to remove hair. The recipe, temperature, consistency and application method can vary between providers. Traditional Sudanese Halwa draws on a beauty heritage in which this ritual has a meaningful place.' },
       { title: 'Start with the right questions', text: 'Ask which ingredients are used, how the paste is applied and which treatment areas are available. Discuss any allergies, sensitivities, recent skin treatments or concerns before you agree to a visit. Natural ingredients do not mean a product is suitable for everyone.' },
       { title: 'Keep expectations personal', text: 'Comfort, the feel of the skin afterwards and the time between treatments vary. Ask your provider how to prepare and how to care for the treated area. For an active skin issue or medical concern, seek advice from a qualified healthcare professional before considering treatment.' },
     ],

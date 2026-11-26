@@ -5,16 +5,16 @@ The original six photographic assets were generated for this project with the bu
 | Delivered asset | Purpose |
 | --- | --- |
 | `public/images/hero.webp` | Warm cream home portrait, lavender mug and robe; homepage campaign |
-| `public/images/sugaring.webp` | Amber sugar-paste still life with lemon, linen and flowers |
+| `public/images/sudanese-halwa.webp` | Dark brown Halwa paste balls in a wooden bowl |
 | `public/images/hair.webp` | Glossy soft-wave hair editorial |
 | `public/images/manicure.webp` | Nude-pink nail editorial on ivory linen |
 | `public/images/home-ritual.webp` | Quiet window-side self-care portrait |
 | `public/images/pedicure.webp` | Pedicure editorial with towels and foot-care accessories |
 | `public/images/og.jpg` | 1200 × 630 crop of the generated campaign portrait |
 
-The final WebP photographs are roughly 105–186 KB each. `scripts/optimize-images.mjs` can create replacement WebP assets from a folder of newly generated PNG files with the same base filenames. Final site assets are bundled locally and require no access to the generator’s original output directory.
+The photographs are delivered as optimized WebP files. `scripts/optimize-images.mjs` can create replacement WebP assets from a folder of newly generated PNG files with the same base filenames. Final site assets are bundled locally and require no access to the generator’s original output directory.
 
-The supplied laptop photograph was used only as visual direction. Neither the laptop nor the screenshot is embedded in the website. The mark and wordmark are original SVG vectors created directly in code; they are not raster-generated logos. Fontsource packages bundle the fonts under their included SIL Open Font License notices. Lucide supplies the interface icons under its ISC license.
+The supplied laptop photograph was used only as visual direction. Neither the laptop nor the screenshot is embedded in the website. The official logo is derived directly from the approved JPG in `branding/sugar-and-aura-official-original.jpg`. The optimized transparent logo and isolated butterfly retain the approved artwork. The favicon uses the same butterfly. Fontsource packages bundle the fonts under their included SIL Open Font License notices. Lucide supplies the interface icons under its ISC license.
 
 ## Phase 2 additions
 
